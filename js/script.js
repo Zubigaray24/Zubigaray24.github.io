@@ -9,3 +9,15 @@ for(var i = 0; i < btns.length; i++) {
     el.classList.toggle("ver");
   });
 }
+
+let body = document.querySelector('body');
+let nombre = document.querySelector('.nombre');
+let btn = document.querySelector('#modo-brillante');
+
+function cambiarFondo(e){
+  e.preventDefault();
+  body.classList.toggle("body-claro");
+  nombre.classList.toggle("nombre2");
+}
+
+btn.addEventListener("click", cambiarFondo);
